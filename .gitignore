@@ -1,0 +1,22 @@
+# Ignore core and vendor when managing dependencies with Composer.
+# core
+#vendor
+
+# Ignore configuration files that may contain sensitive information.
+htdocs/sites/*/settings*.php
+htdocs/sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+htdocs/sites/*/files
+htdocs/sites/*/private
+
+htdocs/node_modules
+htdocs/modules/contrib/devel/
+nbproject/*
+.idea/
+htdocs/config.js
+
+
+# Ignore map files for js and css
+htdocs/profiles/amvb_website/themes/amvb_theme/css/styles.css.map
+htdocs/profiles/amvb_website/themes/amvb_theme/js/main.js.map

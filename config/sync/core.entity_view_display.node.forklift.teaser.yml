@@ -1,0 +1,30 @@
+uuid: 3a866cf1-82ff-4399-b77c-8f6854ff1259
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forklift.body
+    - node.type.forklift
+  module:
+    - text
+    - user
+id: node.forklift.teaser
+targetEntityType: node
+bundle: forklift
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

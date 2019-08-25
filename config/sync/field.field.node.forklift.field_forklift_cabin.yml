@@ -1,0 +1,19 @@
+uuid: 20b8f8f9-116c-4f2c-bd16-88fb514a7071
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forklift_cabin
+    - node.type.forklift
+id: node.forklift.field_forklift_cabin
+field_name: field_forklift_cabin
+entity_type: node
+bundle: forklift
+label: Cabin
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

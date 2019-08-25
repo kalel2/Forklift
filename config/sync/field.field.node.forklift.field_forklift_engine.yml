@@ -1,0 +1,19 @@
+uuid: 537160c1-4f72-4727-b875-190835ae2ce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forklift_engine
+    - node.type.forklift
+id: node.forklift.field_forklift_engine
+field_name: field_forklift_engine
+entity_type: node
+bundle: forklift
+label: Engine
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

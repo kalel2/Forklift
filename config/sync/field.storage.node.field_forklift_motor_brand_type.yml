@@ -1,0 +1,21 @@
+uuid: 1e166226-ca49-4178-aa51-c66cd4119bd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_forklift_motor_brand_type
+field_name: field_forklift_motor_brand_type
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

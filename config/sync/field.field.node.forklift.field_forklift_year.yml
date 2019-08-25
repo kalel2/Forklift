@@ -1,0 +1,23 @@
+uuid: fad3a25a-937a-4c0a-8656-11319251240b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forklift_year
+    - node.type.forklift
+id: node.forklift.field_forklift_year
+field_name: field_forklift_year
+entity_type: node
+bundle: forklift
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
