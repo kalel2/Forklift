@@ -1,0 +1,261 @@
+uuid: 569514b6-40e3-4eab-b304-dadcef555133
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forklift_accessories
+    - field.storage.node.field_forklift_cabin
+    - field.storage.node.field_forklift_capacity_number
+    - field.storage.node.field_forklift_category_term
+    - field.storage.node.field_forklift_engine
+    - field.storage.node.field_forklift_fork_length
+    - field.storage.node.field_forklift_hour_meter_read
+    - field.storage.node.field_forklift_lifting_height
+    - field.storage.node.field_forklift_load_of_gravity
+    - field.storage.node.field_forklift_mast_type
+    - field.storage.node.field_forklift_motor_brand_type
+    - field.storage.node.field_forklift_overall_height
+    - field.storage.node.field_forklift_reference_number
+    - field.storage.node.field_forklift_tires
+    - field.storage.node.field_forklift_year
+    - search_api.server.forklift_db
+  module:
+    - node
+    - search_api
+    - taxonomy
+id: forklift_index
+name: Forklift_index
+description: ''
+read_only: false
+field_settings:
+  aggregated_field:
+    label: 'Aggregated field'
+    property_path: aggregated_field
+    type: string
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/field_forklift_accessories'
+        - 'entity:node/field_forklift_cabin'
+        - 'entity:node/field_forklift_capacity_number'
+        - 'entity:node/field_forklift_category_term'
+        - 'entity:node/field_forklift_engine'
+        - 'entity:node/field_forklift_fork_length'
+        - 'entity:node/field_forklift_hour_meter_read'
+        - 'entity:node/field_forklift_lifting_height'
+        - 'entity:node/field_forklift_load_of_gravity'
+        - 'entity:node/field_forklift_motor_brand_type'
+        - 'entity:node/field_forklift_overall_height'
+        - 'entity:node/field_forklift_reference_number'
+        - 'entity:node/field_forklift_tires'
+        - 'entity:node/field_forklift_year'
+  field_forklift_accessories:
+    label: Accessories
+    datasource_id: 'entity:node'
+    property_path: field_forklift_accessories
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_accessories
+  field_forklift_cabin_2:
+    label: Cabin
+    datasource_id: 'entity:node'
+    property_path: field_forklift_cabin
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_cabin
+  field_forklift_capacity_number:
+    label: Capacity
+    datasource_id: 'entity:node'
+    property_path: field_forklift_capacity_number
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_capacity_number
+  field_forklift_category_term:
+    label: Category
+    datasource_id: 'entity:node'
+    property_path: field_forklift_category_term
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_category_term
+  field_forklift_engine:
+    label: Engine
+    datasource_id: 'entity:node'
+    property_path: field_forklift_engine
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_engine
+  field_forklift_fork_length:
+    label: 'Fork length'
+    datasource_id: 'entity:node'
+    property_path: field_forklift_fork_length
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_fork_length
+  field_forklift_hour_meter_read:
+    label: 'Hour meter reading'
+    datasource_id: 'entity:node'
+    property_path: field_forklift_hour_meter_read
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_hour_meter_read
+  field_forklift_lifting_height:
+    label: 'Lifting height'
+    datasource_id: 'entity:node'
+    property_path: field_forklift_lifting_height
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_lifting_height
+  field_forklift_load_of_gravity:
+    label: 'Load cntr of gravity'
+    datasource_id: 'entity:node'
+    property_path: field_forklift_load_of_gravity
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_load_of_gravity
+  field_forklift_mast_type:
+    label: 'Mast type'
+    datasource_id: 'entity:node'
+    property_path: field_forklift_mast_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_mast_type
+  field_forklift_motor_brand_type:
+    label: 'Motor brand/type'
+    datasource_id: 'entity:node'
+    property_path: field_forklift_motor_brand_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_motor_brand_type
+  field_forklift_overall_height:
+    label: 'Overall height'
+    datasource_id: 'entity:node'
+    property_path: field_forklift_overall_height
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_overall_height
+  field_forklift_reference_number:
+    label: 'Reference number'
+    datasource_id: 'entity:node'
+    property_path: field_forklift_reference_number
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_reference_number
+  field_forklift_tires:
+    label: Tires
+    datasource_id: 'entity:node'
+    property_path: field_forklift_tires
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_tires
+  field_forklift_year:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_forklift_year
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_forklift_year
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - forklift
+    languages:
+      default: false
+      selected:
+        - en
+  'entity:taxonomy_term':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_status: {  }
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  ignore_character:
+    all_fields: false
+    fields: {  }
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+  ignorecase:
+    all_fields: false
+    fields: {  }
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: forklift_db

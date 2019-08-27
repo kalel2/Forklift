@@ -1,8 +1,0 @@
-uuid: cf00afcb-03b1-4307-8ae8-0f9f2d1bad1b
-langcode: en
-status: true
-dependencies: {  }
-name: 'Forklift Brands'
-vid: forklift_brands
-description: 'The brands for forklifts'
-weight: 0

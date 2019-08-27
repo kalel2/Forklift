@@ -1,0 +1,17 @@
+uuid: 5360c13a-255a-4d33-8d05-96ea1e3b24f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: forklift_db
+name: Forklift_db
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: prefix
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

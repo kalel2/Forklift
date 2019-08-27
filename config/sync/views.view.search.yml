@@ -1,0 +1,898 @@
+uuid: 28c8f865-20e2-4592-a418-438b22dad4c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.forklift_index
+    - system.menu.main
+    - taxonomy.vocabulary.forklift_category
+  content:
+    - 'taxonomy_term:forklift_category:06dde964-c9f6-4a16-9219-5955ab1d41ee'
+    - 'taxonomy_term:forklift_category:08b5baa9-5ede-4b20-bae8-5f291c1e4b82'
+    - 'taxonomy_term:forklift_category:23a24486-39cb-40e4-8952-32138eb5e380'
+    - 'taxonomy_term:forklift_category:24c07f6e-2c50-4d65-8f8b-fd8e88009a7d'
+    - 'taxonomy_term:forklift_category:5839391b-d9e5-4b22-b236-56b53081c3ea'
+    - 'taxonomy_term:forklift_category:62450fcf-ec4f-400b-856c-fad23292c0a2'
+    - 'taxonomy_term:forklift_category:9bbbbdef-1a57-407d-88a8-f173b983da09'
+    - 'taxonomy_term:forklift_category:b184747e-3477-44c9-9671-250b7bd06844'
+    - 'taxonomy_term:forklift_category:c6f26ecb-6480-4578-9408-cde6f49f3e5a'
+    - 'taxonomy_term:forklift_category:ca9a41bd-4225-4f24-8539-5c2c4533ae39'
+    - 'taxonomy_term:forklift_category:d97eeb14-9a4b-47c6-9c3b-26ca81627ce9'
+    - 'taxonomy_term:forklift_category:ff8535e4-c048-46f3-a2d7-092527c7c9ac'
+  module:
+    - search_api
+id: search
+label: Search
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_forklift_index
+base_field: search_api_id
+core: 8.x
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: mini
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      style:
+        type: html_list
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              forklift: teaser
+            'entity:taxonomy_term':
+              forklift_category: default
+              tags: default
+      fields:
+        aggregated_field:
+          table: search_api_index_forklift_index
+          field: aggregated_field
+          id: aggregated_field
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: false
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
+      filters:
+        field_forklift_accessories:
+          id: field_forklift_accessories
+          table: search_api_index_forklift_index
+          field: field_forklift_accessories
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_accessories_op
+            label: Accessories
+            description: ''
+            use_operator: false
+            operator: field_forklift_accessories_op
+            identifier: field_forklift_accessories
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_cabin_2:
+          id: field_forklift_cabin_2
+          table: search_api_index_forklift_index
+          field: field_forklift_cabin_2
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_cabin_2_op
+            label: Cabin
+            description: ''
+            use_operator: false
+            operator: field_forklift_cabin_2_op
+            identifier: field_forklift_cabin_2
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_capacity_number:
+          id: field_forklift_capacity_number
+          table: search_api_index_forklift_index
+          field: field_forklift_capacity_number
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_capacity_number_op
+            label: Capacity
+            description: ''
+            use_operator: false
+            operator: field_forklift_capacity_number_op
+            identifier: field_forklift_capacity_number
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_numeric
+        field_forklift_category_term:
+          id: field_forklift_category_term
+          table: search_api_index_forklift_index
+          field: field_forklift_category_term
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            6: 6
+            4: 4
+            9: 9
+            10: 10
+            3: 3
+            11: 11
+            12: 12
+            1: 1
+            8: 8
+            5: 5
+            2: 2
+            7: 7
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_category_term_op
+            label: Category
+            description: ''
+            use_operator: false
+            operator: field_forklift_category_term_op
+            identifier: field_forklift_category_term
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: forklift_category
+          hierarchy: true
+          error_message: true
+          plugin_id: search_api_term
+        field_forklift_engine:
+          id: field_forklift_engine
+          table: search_api_index_forklift_index
+          field: field_forklift_engine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_engine_op
+            label: Engine
+            description: ''
+            use_operator: false
+            operator: field_forklift_engine_op
+            identifier: field_forklift_engine
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_fork_length:
+          id: field_forklift_fork_length
+          table: search_api_index_forklift_index
+          field: field_forklift_fork_length
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_fork_length_op
+            label: 'Fork length'
+            description: ''
+            use_operator: false
+            operator: field_forklift_fork_length_op
+            identifier: field_forklift_fork_length
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_hour_meter_read:
+          id: field_forklift_hour_meter_read
+          table: search_api_index_forklift_index
+          field: field_forklift_hour_meter_read
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_hour_meter_read_op
+            label: 'Hour meter reading'
+            description: ''
+            use_operator: false
+            operator: field_forklift_hour_meter_read_op
+            identifier: field_forklift_hour_meter_read
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_lifting_height:
+          id: field_forklift_lifting_height
+          table: search_api_index_forklift_index
+          field: field_forklift_lifting_height
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_lifting_height_op
+            label: 'Lifting height'
+            description: ''
+            use_operator: false
+            operator: field_forklift_lifting_height_op
+            identifier: field_forklift_lifting_height
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_load_of_gravity:
+          id: field_forklift_load_of_gravity
+          table: search_api_index_forklift_index
+          field: field_forklift_load_of_gravity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_load_of_gravity_op
+            label: 'Load cntr of gravity'
+            description: ''
+            use_operator: false
+            operator: field_forklift_load_of_gravity_op
+            identifier: field_forklift_load_of_gravity
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_mast_type:
+          id: field_forklift_mast_type
+          table: search_api_index_forklift_index
+          field: field_forklift_mast_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_mast_type_op
+            label: 'Mast type'
+            description: ''
+            use_operator: false
+            operator: field_forklift_mast_type_op
+            identifier: field_forklift_mast_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_motor_brand_type:
+          id: field_forklift_motor_brand_type
+          table: search_api_index_forklift_index
+          field: field_forklift_motor_brand_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_motor_brand_type_op
+            label: 'Motor brand/type'
+            description: ''
+            use_operator: false
+            operator: field_forklift_motor_brand_type_op
+            identifier: field_forklift_motor_brand_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_overall_height:
+          id: field_forklift_overall_height
+          table: search_api_index_forklift_index
+          field: field_forklift_overall_height
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_overall_height_op
+            label: 'Overall height'
+            description: ''
+            use_operator: false
+            operator: field_forklift_overall_height_op
+            identifier: field_forklift_overall_height
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_reference_number:
+          id: field_forklift_reference_number
+          table: search_api_index_forklift_index
+          field: field_forklift_reference_number
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_reference_number_op
+            label: 'Reference number'
+            description: ''
+            use_operator: false
+            operator: field_forklift_reference_number_op
+            identifier: field_forklift_reference_number
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        status:
+          id: status
+          table: search_api_index_forklift_index
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_boolean
+        field_forklift_tires:
+          id: field_forklift_tires
+          table: search_api_index_forklift_index
+          field: field_forklift_tires
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_tires_op
+            label: Tires
+            description: ''
+            use_operator: false
+            operator: field_forklift_tires_op
+            identifier: field_forklift_tires
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        field_forklift_year:
+          id: field_forklift_year
+          table: search_api_index_forklift_index
+          field: field_forklift_year
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_forklift_year_op
+            label: Year
+            description: ''
+            use_operator: false
+            operator: field_forklift_year_op
+            identifier: field_forklift_year
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_numeric
+      sorts: {  }
+      title: 'Search Page'
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: search
+      menu:
+        type: normal
+        title: Search
+        menu_name: main
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+      tags: {  }
