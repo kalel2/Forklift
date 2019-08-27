@@ -32,6 +32,7 @@ hidden:
   field_forklift_cabin: true
   field_forklift_capacity_number: true
   field_forklift_category: true
+  field_forklift_category_term: true
   field_forklift_engine: true
   field_forklift_fork_length: true
   field_forklift_hour_meter_read: true
