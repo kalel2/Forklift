@@ -1,0 +1,123 @@
+taxonomies:
+  forklift_category:
+    -
+      vid: forklift_category
+      tid: '1'
+      langcode: en
+      name: 'Mobile Harbour Cranes'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 9bbbbdef-1a57-407d-88a8-f173b983da09
+    -
+      vid: forklift_category
+      tid: '2'
+      langcode: en
+      name: 'Reach stackers'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 62450fcf-ec4f-400b-856c-fad23292c0a2
+    -
+      vid: forklift_category
+      tid: '3'
+      langcode: en
+      name: 'Empty Container Handling'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b184747e-3477-44c9-9671-250b7bd06844
+    -
+      vid: forklift_category
+      tid: '4'
+      langcode: en
+      name: '10-60 ton Heavy Forklifts'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 24c07f6e-2c50-4d65-8f8b-fd8e88009a7d
+    -
+      vid: forklift_category
+      tid: '5'
+      langcode: en
+      name: 'Port Equipment'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d97eeb14-9a4b-47c6-9c3b-26ca81627ce9
+    -
+      vid: forklift_category
+      tid: '6'
+      langcode: en
+      name: '1-10 ton Forklifts'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ff8535e4-c048-46f3-a2d7-092527c7c9ac
+    -
+      vid: forklift_category
+      tid: '7'
+      langcode: en
+      name: 'Warehouse Equipment'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ca9a41bd-4225-4f24-8539-5c2c4533ae39
+    -
+      vid: forklift_category
+      tid: '8'
+      langcode: en
+      name: 'Other Equipment'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 23a24486-39cb-40e4-8952-32138eb5e380
+    -
+      vid: forklift_category
+      tid: '9'
+      langcode: en
+      name: Attachments
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: c6f26ecb-6480-4578-9408-cde6f49f3e5a
+    -
+      vid: forklift_category
+      tid: '10'
+      langcode: en
+      name: 'Contanier Spreaders'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 06dde964-c9f6-4a16-9219-5955ab1d41ee
+    -
+      vid: forklift_category
+      tid: '11'
+      langcode: en
+      name: Forks
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 08b5baa9-5ede-4b20-bae8-5f291c1e4b82
+    -
+      vid: forklift_category
+      tid: '12'
+      langcode: en
+      name: 'Machine Parts'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 5839391b-d9e5-4b22-b236-56b53081c3ea
+  tags: {  }
