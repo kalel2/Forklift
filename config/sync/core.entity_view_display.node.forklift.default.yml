@@ -20,9 +20,10 @@ dependencies:
     - field.field.node.forklift.field_forklift_reference_number
     - field.field.node.forklift.field_forklift_tires
     - field.field.node.forklift.field_forklift_year
+    - image.style.flexslider_full
     - node.type.forklift
   module:
-    - image
+    - flexslider_fields
     - text
     - user
 id: node.forklift.default
@@ -92,10 +93,12 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
+      optionset: default
+      image_style: flexslider_full
       image_link: ''
+      caption: ''
     third_party_settings: {  }
-    type: image
+    type: flexslider
     region: content
   field_forklift_lifting_height:
     weight: 6
