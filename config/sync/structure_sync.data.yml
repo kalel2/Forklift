@@ -1,55 +1,186 @@
 taxonomies:
+  forklift_brands:
+    -
+      vid: forklift_brands
+      tid: '29'
+      langcode: en
+      name: Bt
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 4446fe28-c597-44c2-b489-0ded52ed3a9c
+      url_alias: /bt
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '36'
+      langcode: en
+      name: Fantuzzi
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3340184d-ceb5-42b3-a34d-8581b9289d34
+      url_alias: /fantuzzi
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '30'
+      langcode: en
+      name: Hyster
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 34863beb-c0e4-4e58-a50c-0545cd5ced67
+      url_alias: /hyster
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '37'
+      langcode: en
+      name: Jungheinrich
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: e581dd96-6b06-42dc-9837-11065bfcd7a9
+      url_alias: /jungheinrich
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '31'
+      langcode: en
+      name: Kalmar
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ba49f9a1-5d84-4d39-93fb-b67dad632daa
+      url_alias: /kalmar
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '38'
+      langcode: en
+      name: Konecranes
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f29a6878-3d50-4196-9deb-33f36d93ef44
+      url_alias: /konecranes
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '32'
+      langcode: en
+      name: Linde
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 2ffa2aca-16d5-421f-bb47-445db6c0a616
+      url_alias: /linde
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '39'
+      langcode: en
+      name: Mafi
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 0241e35c-f1f8-49d3-b686-f602c0c03b0c
+      url_alias: /mafi
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '33'
+      langcode: en
+      name: Manitou
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 5074bf2c-83af-44e4-a8f3-d1efa8eff304
+      url_alias: /manitou
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '40'
+      langcode: en
+      name: Smv
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: bcc8c000-a8b5-422d-b80f-cd6a18fd1600
+      url_alias: /smv
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '34'
+      langcode: en
+      name: Svetruck
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a9bcf955-0364-4bf4-afec-67070b04f69f
+      url_alias: /svetruck
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '41'
+      langcode: en
+      name: Terberg
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 0a8057b9-ecd4-4161-974d-bebd9174f54c
+      url_alias: /terberg
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '35'
+      langcode: en
+      name: Terex
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 2ec0bc25-5471-4c7d-a687-611b906a24d2
+      url_alias: /terex
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '42'
+      langcode: en
+      name: Toyota
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 277d31c8-3b44-40dc-9e3f-ff3467e04ce4
+      url_alias: /toyota
+      field_forklifts_brand_logo_term: {  }
+    -
+      vid: forklift_brands
+      tid: '43'
+      langcode: en
+      name: Yale
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d2b3f696-78fc-4cee-9728-85029660ebb6
+      url_alias: /yale
+      field_forklifts_brand_logo_term: {  }
   forklift_category:
-    -
-      vid: forklift_category
-      tid: '1'
-      langcode: en
-      name: 'Mobile Harbour Cranes'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '0'
-      uuid: 9bbbbdef-1a57-407d-88a8-f173b983da09
-    -
-      vid: forklift_category
-      tid: '2'
-      langcode: en
-      name: 'Reach stackers'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '0'
-      uuid: 62450fcf-ec4f-400b-856c-fad23292c0a2
-    -
-      vid: forklift_category
-      tid: '3'
-      langcode: en
-      name: 'Empty Container Handling'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '0'
-      uuid: b184747e-3477-44c9-9671-250b7bd06844
-    -
-      vid: forklift_category
-      tid: '4'
-      langcode: en
-      name: '10-60 ton Heavy Forklifts'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '0'
-      uuid: 24c07f6e-2c50-4d65-8f8b-fd8e88009a7d
-    -
-      vid: forklift_category
-      tid: '5'
-      langcode: en
-      name: 'Port Equipment'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '0'
-      uuid: d97eeb14-9a4b-47c6-9c3b-26ca81627ce9
     -
       vid: forklift_category
       tid: '6'
@@ -60,26 +191,18 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: ff8535e4-c048-46f3-a2d7-092527c7c9ac
+      url_alias: /1_10_ton_forklifts
     -
       vid: forklift_category
-      tid: '7'
+      tid: '4'
       langcode: en
-      name: 'Warehouse Equipment'
+      name: '10-60 ton Heavy Forklifts'
       description__value: null
       description__format: null
       weight: '0'
       parent: '0'
-      uuid: ca9a41bd-4225-4f24-8539-5c2c4533ae39
-    -
-      vid: forklift_category
-      tid: '8'
-      langcode: en
-      name: 'Other Equipment'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '0'
-      uuid: 23a24486-39cb-40e4-8952-32138eb5e380
+      uuid: 24c07f6e-2c50-4d65-8f8b-fd8e88009a7d
+      url_alias: /10_60_ton_heavy_forklifts
     -
       vid: forklift_category
       tid: '9'
@@ -90,6 +213,7 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: c6f26ecb-6480-4578-9408-cde6f49f3e5a
+      url_alias: /attachments
     -
       vid: forklift_category
       tid: '10'
@@ -100,6 +224,18 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: 06dde964-c9f6-4a16-9219-5955ab1d41ee
+      url_alias: /contanier_spreaders
+    -
+      vid: forklift_category
+      tid: '3'
+      langcode: en
+      name: 'Empty Container Handling'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b184747e-3477-44c9-9671-250b7bd06844
+      url_alias: /empty_container_handling
     -
       vid: forklift_category
       tid: '11'
@@ -110,6 +246,7 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: 08b5baa9-5ede-4b20-bae8-5f291c1e4b82
+      url_alias: /forks
     -
       vid: forklift_category
       tid: '12'
@@ -120,4 +257,71 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: 5839391b-d9e5-4b22-b236-56b53081c3ea
+      url_alias: /machine_parts
+    -
+      vid: forklift_category
+      tid: '1'
+      langcode: en
+      name: 'Mobile Harbour Cranes'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 9bbbbdef-1a57-407d-88a8-f173b983da09
+      url_alias: /mobile_harbour_cranes
+    -
+      vid: forklift_category
+      tid: '8'
+      langcode: en
+      name: 'Other Equipment'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 23a24486-39cb-40e4-8952-32138eb5e380
+      url_alias: /other_equipment
+    -
+      vid: forklift_category
+      tid: '5'
+      langcode: en
+      name: 'Port Equipment'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d97eeb14-9a4b-47c6-9c3b-26ca81627ce9
+      url_alias: /port_equipment
+    -
+      vid: forklift_category
+      tid: '2'
+      langcode: en
+      name: 'Reach stackers'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 62450fcf-ec4f-400b-856c-fad23292c0a2
+      url_alias: /reach_stackers
+    -
+      vid: forklift_category
+      tid: '13'
+      langcode: en
+      name: Test
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 11bb4a1d-cdf6-4f31-8df8-29682eaf86a1
+      url_alias: /test
+    -
+      vid: forklift_category
+      tid: '7'
+      langcode: en
+      name: 'Warehouse Equipment'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ca9a41bd-4225-4f24-8539-5c2c4533ae39
+      url_alias: /warehouse_equipment
   tags: {  }

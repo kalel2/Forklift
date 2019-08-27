@@ -1,0 +1,31 @@
+diff --git a/htdocs/modules/structure_sync/src/Controller/TaxonomiesController.php b/htdocs/modules/structure_sync/src/Controller/TaxonomiesController.php
+index 4150dcd..41d66b7 100755
+--- a/htdocs/modules/structure_sync/src/Controller/TaxonomiesController.php
++++ b/htdocs/modules/structure_sync/src/Controller/TaxonomiesController.php
+@@ -84,6 +84,8 @@ class TaxonomiesController extends ControllerBase {
+       // Build array of taxonomy terms and associated field values.
+       $taxonomies = [];
+       foreach ($entities as $entity) {
++        $aliasManager = \Drupal::service('path.alias_manager');
++        $alias = $aliasManager->getAliasByPath('/taxonomy/term/'.$entity->id());
+         $entity_properties = [
+           'vid' => $vocabulary,
+           'tid' => $entity->id(),
+@@ -96,6 +98,7 @@ class TaxonomiesController extends ControllerBase {
+           'weight' => $entity->weight->getValue()[0]['value'],
+           'parent' => isset($parents[$entity->id()]) ? $parents[$entity->id()] : '0',
+           'uuid' => $entity->uuid(),
++          'url_alias' => $alias
+         ];
+ 
+         // Identify and build array of any custom fields attached to terms.
+@@ -417,6 +420,9 @@ class TaxonomiesController extends ControllerBase {
+                 'weight' => $taxonomy['weight'],
+                 'parent' => [$parent],
+                 'uuid' => $taxonomy['uuid'],
++                'path' => [
++                  'alias' => $taxonomy['url_alias'],
++                ]
+               ];
+ 
+               Term::create($entity_properties + $entity_fields)->save();
