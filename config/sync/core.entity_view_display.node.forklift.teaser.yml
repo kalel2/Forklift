@@ -45,3 +45,4 @@ hidden:
   field_forklift_reference_number: true
   field_forklift_tires: true
   field_forklift_year: true
+  search_api_excerpt: true

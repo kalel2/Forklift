@@ -6,19 +6,6 @@ dependencies:
     - search_api.index.forklift_index
     - system.menu.main
     - taxonomy.vocabulary.forklift_category
-  content:
-    - 'taxonomy_term:forklift_category:06dde964-c9f6-4a16-9219-5955ab1d41ee'
-    - 'taxonomy_term:forklift_category:08b5baa9-5ede-4b20-bae8-5f291c1e4b82'
-    - 'taxonomy_term:forklift_category:23a24486-39cb-40e4-8952-32138eb5e380'
-    - 'taxonomy_term:forklift_category:24c07f6e-2c50-4d65-8f8b-fd8e88009a7d'
-    - 'taxonomy_term:forklift_category:5839391b-d9e5-4b22-b236-56b53081c3ea'
-    - 'taxonomy_term:forklift_category:62450fcf-ec4f-400b-856c-fad23292c0a2'
-    - 'taxonomy_term:forklift_category:9bbbbdef-1a57-407d-88a8-f173b983da09'
-    - 'taxonomy_term:forklift_category:b184747e-3477-44c9-9671-250b7bd06844'
-    - 'taxonomy_term:forklift_category:c6f26ecb-6480-4578-9408-cde6f49f3e5a'
-    - 'taxonomy_term:forklift_category:ca9a41bd-4225-4f24-8539-5c2c4533ae39'
-    - 'taxonomy_term:forklift_category:d97eeb14-9a4b-47c6-9c3b-26ca81627ce9'
-    - 'taxonomy_term:forklift_category:ff8535e4-c048-46f3-a2d7-092527c7c9ac'
   module:
     - search_api
 id: search
@@ -291,19 +278,7 @@ display:
           group_type: group
           admin_label: ''
           operator: or
-          value:
-            6: 6
-            4: 4
-            9: 9
-            10: 10
-            3: 3
-            11: 11
-            12: 12
-            1: 1
-            8: 8
-            5: 5
-            2: 2
-            7: 7
+          value: {  }
           group: 1
           exposed: true
           expose:
