@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.forklift.field_forklift_accessories
     - field.field.node.forklift.field_forklift_cabin
     - field.field.node.forklift.field_forklift_capacity_number
+    - field.field.node.forklift.field_forklift_category
     - field.field.node.forklift.field_forklift_engine
     - field.field.node.forklift.field_forklift_fork_length
     - field.field.node.forklift.field_forklift_hour_meter_read
@@ -32,7 +33,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
@@ -62,11 +63,17 @@ content:
     type: string_textfield
     region: content
   field_forklift_capacity_number:
-    weight: 26
+    weight: 14
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_forklift_category:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_forklift_engine:
     weight: 12
@@ -93,7 +100,7 @@ content:
     type: string_textfield
     region: content
   field_forklift_images:
-    weight: 8
+    weight: 9
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -117,7 +124,7 @@ content:
     type: string_textfield
     region: content
   field_forklift_mast_type:
-    weight: 14
+    weight: 15
     settings:
       size: 60
       placeholder: ''
@@ -141,7 +148,7 @@ content:
     type: string_textfield
     region: content
   field_forklift_reference_number:
-    weight: 9
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -149,7 +156,7 @@ content:
     type: string_textfield
     region: content
   field_forklift_tires:
-    weight: 15
+    weight: 16
     settings:
       size: 60
       placeholder: ''
@@ -157,7 +164,7 @@ content:
     type: string_textfield
     region: content
   field_forklift_year:
-    weight: 16
+    weight: 17
     settings:
       placeholder: ''
     third_party_settings: {  }

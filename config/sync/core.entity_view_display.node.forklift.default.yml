@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.forklift.field_forklift_accessories
     - field.field.node.forklift.field_forklift_cabin
     - field.field.node.forklift.field_forklift_capacity_number
+    - field.field.node.forklift.field_forklift_category
     - field.field.node.forklift.field_forklift_engine
     - field.field.node.forklift.field_forklift_fork_length
     - field.field.node.forklift.field_forklift_hour_meter_read
@@ -37,7 +38,7 @@ content:
     third_party_settings: {  }
     region: content
   field_forklift_accessories:
-    weight: 11
+    weight: 10
     label: above
     settings:
       link_to_entity: false
@@ -45,7 +46,7 @@ content:
     type: string
     region: content
   field_forklift_cabin:
-    weight: 16
+    weight: 15
     label: above
     settings:
       link_to_entity: false
@@ -53,7 +54,7 @@ content:
     type: string
     region: content
   field_forklift_capacity_number:
-    weight: 17
+    weight: 16
     label: above
     settings:
       thousand_separator: ''
@@ -64,7 +65,7 @@ content:
     type: number_decimal
     region: content
   field_forklift_engine:
-    weight: 6
+    weight: 5
     label: above
     settings:
       link_to_entity: false
@@ -72,7 +73,7 @@ content:
     type: string
     region: content
   field_forklift_fork_length:
-    weight: 15
+    weight: 14
     label: above
     settings:
       link_to_entity: false
@@ -80,7 +81,7 @@ content:
     type: string
     region: content
   field_forklift_hour_meter_read:
-    weight: 5
+    weight: 4
     label: above
     settings:
       link_to_entity: false
@@ -97,7 +98,7 @@ content:
     type: image
     region: content
   field_forklift_lifting_height:
-    weight: 7
+    weight: 6
     label: above
     settings:
       link_to_entity: false
@@ -105,22 +106,6 @@ content:
     type: string
     region: content
   field_forklift_load_of_gravity:
-    weight: 13
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_forklift_mast_type:
-    weight: 8
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_forklift_motor_brand_type:
     weight: 12
     label: above
     settings:
@@ -128,8 +113,24 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_forklift_mast_type:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_motor_brand_type:
+    weight: 11
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_forklift_overall_height:
-    weight: 14
+    weight: 13
     label: above
     settings:
       link_to_entity: false
@@ -145,7 +146,7 @@ content:
     type: string
     region: content
   field_forklift_tires:
-    weight: 9
+    weight: 8
     label: above
     settings:
       link_to_entity: false
@@ -153,7 +154,7 @@ content:
     type: string
     region: content
   field_forklift_year:
-    weight: 10
+    weight: 9
     label: above
     settings:
       thousand_separator: ''
@@ -166,4 +167,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_forklift_category: true

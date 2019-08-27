@@ -1,0 +1,57 @@
+uuid: dcc3fea1-b932-429b-a63c-90a1ade1b3c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_forklift_category
+field_name: field_forklift_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: mobile_harbour_cranes
+      label: 'Mobile Harbour Cranes'
+    -
+      value: reach_stackers
+      label: 'Reach stackers'
+    -
+      value: empty_container_handling
+      label: 'Empty Container Handling'
+    -
+      value: 10_60_ton_heavy_forklifts
+      label: '10-60 ton Heavy Forklifts'
+    -
+      value: port_equipment
+      label: 'Port Equipment'
+    -
+      value: 1_10_ton_forklifts
+      label: '1-10 ton Forklifts'
+    -
+      value: warehouse_equipment
+      label: 'Warehouse Equipment'
+    -
+      value: other_equipment
+      label: 'Other Equipment'
+    -
+      value: attachments
+      label: Attachments
+    -
+      value: contanier_spreaders
+      label: 'Contanier Spreaders'
+    -
+      value: forks
+      label: Forks
+    -
+      value: machine_parts
+      label: 'Machine Parts'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
