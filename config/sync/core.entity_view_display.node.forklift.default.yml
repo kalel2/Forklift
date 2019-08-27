@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.forklift.body
     - field.field.node.forklift.field_forklift_accessories
     - field.field.node.forklift.field_forklift_cabin
-    - field.field.node.forklift.field_forklift_capacity
+    - field.field.node.forklift.field_forklift_capacity_number
     - field.field.node.forklift.field_forklift_engine
     - field.field.node.forklift.field_forklift_fork_length
     - field.field.node.forklift.field_forklift_hour_meter_read
@@ -52,13 +52,16 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_forklift_capacity:
-    weight: 4
+  field_forklift_capacity_number:
+    weight: 17
     label: above
     settings:
-      link_to_entity: false
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
     third_party_settings: {  }
-    type: string
+    type: number_decimal
     region: content
   field_forklift_engine:
     weight: 6

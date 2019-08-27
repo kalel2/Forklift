@@ -1,17 +1,14 @@
-uuid: bbf27b26-51af-411d-80e3-3252c2ddf7d0
+uuid: 6ffce6e2-b662-40cb-9da3-269d805fa8c0
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_forklift_capacity
-field_name: field_forklift_capacity
+id: node.field_forklift_capacity_number
+field_name: field_forklift_capacity_number
 entity_type: node
-type: string
-settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+type: float
+settings: {  }
 module: core
 locked: false
 cardinality: 1
