@@ -863,6 +863,7 @@ display:
         type: normal
         title: Search
         menu_name: main
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
