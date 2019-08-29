@@ -1,0 +1,8 @@
+uuid: 10dc1ec7-77da-4326-9a9f-4d315696eca6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Forklift category'
+vid: forklift_category
+description: 'The categories for forklift'
+weight: 0

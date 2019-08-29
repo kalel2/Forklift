@@ -1,0 +1,19 @@
+uuid: b9d6d4f3-f879-4cf5-b6bf-f9f8615904d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forklift_motor_brand_type
+    - node.type.forklift
+id: node.forklift.field_forklift_motor_brand_type
+field_name: field_forklift_motor_brand_type
+entity_type: node
+bundle: forklift
+label: 'Motor brand/type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

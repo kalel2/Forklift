@@ -1,0 +1,22 @@
+uuid: ec8a7e73-805e-4dea-9317-e076b473ec29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.forklift
+  module:
+    - text
+id: node.forklift.body
+field_name: body
+entity_type: node
+bundle: forklift
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,181 @@
+uuid: e953159d-5c6c-4193-8955-4ba4fde38f9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forklift.body
+    - field.field.node.forklift.field_forklift_accessories
+    - field.field.node.forklift.field_forklift_cabin
+    - field.field.node.forklift.field_forklift_capacity_number
+    - field.field.node.forklift.field_forklift_category_term
+    - field.field.node.forklift.field_forklift_engine
+    - field.field.node.forklift.field_forklift_fork_length
+    - field.field.node.forklift.field_forklift_hour_meter_read
+    - field.field.node.forklift.field_forklift_images
+    - field.field.node.forklift.field_forklift_lifting_height
+    - field.field.node.forklift.field_forklift_load_of_gravity
+    - field.field.node.forklift.field_forklift_mast_type
+    - field.field.node.forklift.field_forklift_motor_brand_type
+    - field.field.node.forklift.field_forklift_overall_height
+    - field.field.node.forklift.field_forklift_reference_number
+    - field.field.node.forklift.field_forklift_tires
+    - field.field.node.forklift.field_forklift_year
+    - image.style.flexslider_full
+    - node.type.forklift
+  module:
+    - flexslider_fields
+    - text
+    - user
+id: node.forklift.default
+targetEntityType: node
+bundle: forklift
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_forklift_accessories:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_cabin:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_capacity_number:
+    weight: 16
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_forklift_category_term:
+    weight: 17
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_forklift_engine:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_fork_length:
+    weight: 14
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_hour_meter_read:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_images:
+    weight: 2
+    label: hidden
+    settings:
+      optionset: default
+      image_style: flexslider_full
+      image_link: ''
+      caption: ''
+    third_party_settings: {  }
+    type: flexslider
+    region: content
+  field_forklift_lifting_height:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_load_of_gravity:
+    weight: 12
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_mast_type:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_motor_brand_type:
+    weight: 11
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_overall_height:
+    weight: 13
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_reference_number:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_tires:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forklift_year:
+    weight: 9
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

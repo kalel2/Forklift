@@ -304,6 +304,17 @@ taxonomies:
       url_alias: /reach_stackers
     -
       vid: forklift_category
+      tid: '13'
+      langcode: en
+      name: Test
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 11bb4a1d-cdf6-4f31-8df8-29682eaf86a1
+      url_alias: /test
+    -
+      vid: forklift_category
       tid: '7'
       langcode: en
       name: 'Warehouse Equipment'

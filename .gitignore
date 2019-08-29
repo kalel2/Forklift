@@ -18,5 +18,5 @@ htdocs/config.js
 
 
 # Ignore map files for js and css
-htdocs/profiles/amvb_website/themes/amvb_theme/css/styles.css.map
-htdocs/profiles/amvb_website/themes/amvb_theme/js/main.js.map
+htdocs/profiles/forklift_website/themes/forklift_theme/css/styles.css.map
+htdocs/profiles/forklift_website/themes/forklift_theme/js/main.js.map

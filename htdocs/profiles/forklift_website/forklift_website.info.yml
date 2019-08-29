@@ -1,0 +1,61 @@
+name: forklift_website
+type: profile
+description: 'Installation profile for Forklift website'
+core: 8.x
+
+distribution:
+  name: 'Forklift website'
+
+dependencies:
+  - automated_cron
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - color
+  - comment
+  - config
+  - contact
+  - contextual
+  - datetime
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - field
+  - field_ui
+  - file
+  - filter
+  - flexslider
+  - flexslider_fields
+  - flexslider_views
+  - help
+  - history
+  - image
+  - libraries
+  - link
+  - menu_ui
+  - node
+  - options
+  - page_cache
+  - path
+  - quickedit
+  - rdf
+  - search_api
+  - search_api_db
+  - shortcut
+  - structure_sync
+  - system
+  - taxonomy
+  - text
+  - toolbar
+  - tour
+  - update
+  - user
+  - views_ui
+  - menu_link_content
+  - views
+themes:
+  - forklift_theme
+  - bartik
+  - seven

@@ -1,0 +1,23 @@
+{
+  "name": "Forklift",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Serhiy",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-watch": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "browser-sync": "latest",
+    "gulp-plumber": "latest",
+    "gulp-shell": "latest",
+    "gulp-size": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-util": "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest",
+    "yargs": "latest"
+  }
+}

@@ -1,0 +1,19 @@
+uuid: 46f5a344-a555-4b6e-a39a-c8207bf091ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forklift_hour_meter_read
+    - node.type.forklift
+id: node.forklift.field_forklift_hour_meter_read
+field_name: field_forklift_hour_meter_read
+entity_type: node
+bundle: forklift
+label: 'Hour meter reading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
