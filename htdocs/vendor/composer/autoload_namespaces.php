@@ -6,10 +6,18 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'phpDocumentor' => array($vendorDir . '/phpdocumentor/reflection-docblock/src'),
+    'org\\bovigo\\vfs\\' => array($vendorDir . '/mikey179/vfsstream/src/main/php'),
+    'WebDriver' => array($vendorDir . '/instaclick/php-webdriver/lib'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
+    'Svg\\' => array($vendorDir . '/phenx/php-svg-lib/src'),
     'Stack' => array($vendorDir . '/stack/builder/src'),
+    'Sabberworm\\CSS' => array($vendorDir . '/sabberworm/php-css-parser/lib'),
+    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'PEAR' => array($vendorDir . '/pear/pear_exception'),
     'EasyRdf_' => array($vendorDir . '/easyrdf/easyrdf/lib'),
+    'Drupal\\' => array($vendorDir . '/drupal/coder/coder_sniffer/Drupal'),
+    'DrupalPractice\\' => array($vendorDir . '/drupal/coder/coder_sniffer/Drupal'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
     'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/lib'),

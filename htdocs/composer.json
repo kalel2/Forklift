@@ -5,7 +5,10 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "tecnickcom/tcpdf": "^6.2",
+        "dompdf/dompdf": "^0.8.3",
+        "mikehaertl/phpwkhtmltopdf": "^2.4"
     },
     "replace": {
         "drupal/core": "^8.7"
