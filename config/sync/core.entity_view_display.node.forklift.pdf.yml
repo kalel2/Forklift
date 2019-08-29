@@ -1,8 +1,9 @@
-uuid: e953159d-5c6c-4193-8955-4ba4fde38f9d
+uuid: b7b1c7d7-07b4-4aaa-91fb-a0d1254eb243
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.pdf
     - field.field.node.forklift.body
     - field.field.node.forklift.field_forklift_accessories
     - field.field.node.forklift.field_forklift_cabin
@@ -23,19 +24,13 @@ dependencies:
     - image.style.flexslider_full
     - node.type.forklift
   module:
-    - entity_print
     - flexslider_fields
     - text
     - user
-third_party_settings:
-  entity_print:
-    pdf_label: 'Download PDF'
-    epub_label: 'Download EPub'
-    word_docx_label: 'Download Word Document'
-id: node.forklift.default
+id: node.forklift.pdf
 targetEntityType: node
 bundle: forklift
-mode: default
+mode: pdf
 content:
   body:
     label: hidden
@@ -44,11 +39,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  entity_print_view_pdf:
-    weight: 18
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_forklift_accessories:
     weight: 10
     label: above
@@ -191,5 +181,6 @@ content:
     third_party_settings: {  }
 hidden:
   entity_print_view_epub: true
+  entity_print_view_pdf: true
   entity_print_view_word_docx: true
   search_api_excerpt: true
