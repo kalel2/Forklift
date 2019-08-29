@@ -7,6 +7,7 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.forklift_category
   module:
+    - entity_print_views
     - search_api
 id: search
 label: Search
@@ -838,7 +839,19 @@ display:
       sorts: {  }
       title: 'Search Page'
       header: {  }
-      footer: {  }
+      footer:
+        area_entity_print_views:
+          id: area_entity_print_views
+          table: views
+          field: area_entity_print_views
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          export_type: pdf
+          link_text: 'Download PDF'
+          display_id: page_1
+          plugin_id: entity_print_views_link
       empty: {  }
       relationships: {  }
       arguments: {  }
