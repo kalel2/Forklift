@@ -1,0 +1,24 @@
+uuid: 86cd526f-4d79-4678-8c4b-a04df4a9e71d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_aliases
+label: 'Content aliases'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  cec7c68c-73a6-4b74-b638-4f4698dea596:
+    id: node_type
+    bundles:
+      article: article
+      forklift: forklift
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cec7c68c-73a6-4b74-b638-4f4698dea596
+selection_logic: and
+weight: -5
+relationships: {  }
