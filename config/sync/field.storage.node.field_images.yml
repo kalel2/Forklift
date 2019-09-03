@@ -1,15 +1,15 @@
-uuid: cd96327c-6ad5-4bda-b8d0-ee400b5e1931
+uuid: 6363b3f6-0b52-46fc-9450-590889a40aab
 langcode: en
 status: true
 dependencies:
   module:
     - file
-    - image
+    - forklift_general
     - node
-id: node.field_forklift_images
-field_name: field_forklift_images
+id: node.field_images
+field_name: field_images
 entity_type: node
-type: image
+type: forklift_image
 settings:
   uri_scheme: public
   default_image:
@@ -21,7 +21,7 @@ settings:
   target_type: file
   display_field: false
   display_default: false
-module: image
+module: forklift_general
 locked: false
 cardinality: -1
 translatable: true

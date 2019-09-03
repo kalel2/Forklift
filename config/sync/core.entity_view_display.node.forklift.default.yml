@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.forklift.field_forklift_engine
     - field.field.node.forklift.field_forklift_fork_length
     - field.field.node.forklift.field_forklift_hour_meter_read
-    - field.field.node.forklift.field_forklift_images
     - field.field.node.forklift.field_forklift_lifting_height
     - field.field.node.forklift.field_forklift_load_of_gravity
     - field.field.node.forklift.field_forklift_mast_type
@@ -20,11 +19,12 @@ dependencies:
     - field.field.node.forklift.field_forklift_reference_number
     - field.field.node.forklift.field_forklift_tires
     - field.field.node.forklift.field_forklift_year
+    - field.field.node.forklift.field_images
     - image.style.flexslider_full
     - node.type.forklift
   module:
     - entity_print
-    - flexslider_fields
+    - forklift_general
     - text
     - user
 third_party_settings:
@@ -45,7 +45,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -113,17 +113,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_forklift_images:
-    weight: 2
-    label: hidden
-    settings:
-      optionset: default
-      image_style: flexslider_full
-      image_link: ''
-      caption: ''
-    third_party_settings: {  }
-    type: flexslider
-    region: content
   field_forklift_lifting_height:
     weight: 6
     label: above
@@ -188,6 +177,17 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_images:
+    weight: 1
+    label: above
+    settings:
+      optionset: default
+      image_style: flexslider_full
+      image_link: ''
+      caption: ''
+    third_party_settings: {  }
+    type: forklift_flexslider
     region: content
   links:
     weight: 0

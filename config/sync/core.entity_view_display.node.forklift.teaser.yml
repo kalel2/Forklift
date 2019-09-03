@@ -5,8 +5,26 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.forklift.body
+    - field.field.node.forklift.field_forklift_accessories
+    - field.field.node.forklift.field_forklift_cabin
+    - field.field.node.forklift.field_forklift_capacity_number
+    - field.field.node.forklift.field_forklift_category_term
+    - field.field.node.forklift.field_forklift_engine
+    - field.field.node.forklift.field_forklift_fork_length
+    - field.field.node.forklift.field_forklift_hour_meter_read
+    - field.field.node.forklift.field_forklift_lifting_height
+    - field.field.node.forklift.field_forklift_load_of_gravity
+    - field.field.node.forklift.field_forklift_mast_type
+    - field.field.node.forklift.field_forklift_motor_brand_type
+    - field.field.node.forklift.field_forklift_overall_height
+    - field.field.node.forklift.field_forklift_reference_number
+    - field.field.node.forklift.field_forklift_tires
+    - field.field.node.forklift.field_forklift_year
+    - field.field.node.forklift.field_images
+    - image.style.thumbnail
     - node.type.forklift
   module:
+    - forklift_general
     - text
     - user
 id: node.forklift.teaser
@@ -17,32 +35,76 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_forklift_capacity_number:
+    type: number_decimal
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_forklift_engine:
+    type: string
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_forklift_lifting_height:
+    type: string
+    weight: 5
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_forklift_reference_number:
+    type: string
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_images:
+    type: forklift_image
+    weight: 6
+    region: content
+    label: above
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_forklift_accessories: true
   field_forklift_cabin: true
-  field_forklift_capacity_number: true
   field_forklift_category: true
   field_forklift_category_term: true
-  field_forklift_engine: true
   field_forklift_fork_length: true
   field_forklift_hour_meter_read: true
   field_forklift_images: true
-  field_forklift_lifting_height: true
   field_forklift_load_of_gravity: true
   field_forklift_mast_type: true
   field_forklift_motor_brand_type: true
   field_forklift_overall_height: true
-  field_forklift_reference_number: true
   field_forklift_tires: true
   field_forklift_year: true
   search_api_excerpt: true

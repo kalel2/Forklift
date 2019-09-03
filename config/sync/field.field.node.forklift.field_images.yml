@@ -1,34 +1,32 @@
-uuid: 44cb5398-35d5-474d-a072-9df6afab9f98
+uuid: 0ab3adbb-f0c9-46e0-84e6-a2d3721bf95d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.article
+    - field.storage.node.field_images
+    - node.type.forklift
   module:
-    - image
-_core:
-  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
-id: node.article.field_image
-field_name: field_image
+    - forklift_general
+id: node.forklift.field_images
+field_name: field_images
 entity_type: node
-bundle: article
-label: Image
+bundle: forklift
+label: Images
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '20  MB'
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: false
-  alt_field_required: false
-  title_field: false
-  title_field_required: false
+  alt_field: 0
+  alt_field_required: 1
+  title_field: 0
+  title_field_required: 0
   default_image:
     uuid: ''
     alt: ''
@@ -37,4 +35,4 @@ settings:
     height: null
   handler: 'default:file'
   handler_settings: {  }
-field_type: image
+field_type: forklift_image

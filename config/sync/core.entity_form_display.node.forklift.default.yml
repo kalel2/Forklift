@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.forklift.field_forklift_engine
     - field.field.node.forklift.field_forklift_fork_length
     - field.field.node.forklift.field_forklift_hour_meter_read
-    - field.field.node.forklift.field_forklift_images
     - field.field.node.forklift.field_forklift_lifting_height
     - field.field.node.forklift.field_forklift_load_of_gravity
     - field.field.node.forklift.field_forklift_mast_type
@@ -20,10 +19,11 @@ dependencies:
     - field.field.node.forklift.field_forklift_reference_number
     - field.field.node.forklift.field_forklift_tires
     - field.field.node.forklift.field_forklift_year
+    - field.field.node.forklift.field_images
     - image.style.thumbnail
     - node.type.forklift
   module:
-    - image
+    - forklift_general
     - path
     - text
 id: node.forklift.default
@@ -99,14 +99,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_forklift_images:
-    weight: 9
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
   field_forklift_lifting_height:
     weight: 13
     settings:
@@ -169,6 +161,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_images:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: forklift_image
     region: content
   path:
     type: path

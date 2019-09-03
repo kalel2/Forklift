@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.field_image
+    - field.field.node.article.field_news_image
     - image.style.thumbnail
     - node.type.article
   module:
-    - image
+    - forklift_general
     - path
     - text
 _core:
@@ -33,14 +33,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    type: image_image
-    weight: 1
-    region: content
+  field_news_image:
+    weight: 26
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: forklift_image
+    region: content
   path:
     type: path
     weight: 7

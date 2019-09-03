@@ -14,7 +14,7 @@ use Drupal\Core\TypedData\DataDefinition;
  *   label = @Translation("Forklift image"),
  *   category = @Translation("Reference"),
  *   default_widget = "forklift_image",
- *   default_formatter = "image",
+ *   default_formatter = "forklift_image",
  *   column_groups = {
  *     "file" = {
  *       "label" = @Translation("File"),
