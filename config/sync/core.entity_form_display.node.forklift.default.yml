@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.forklift.field_forklift_overall_height
     - field.field.node.forklift.field_forklift_reference_number
     - field.field.node.forklift.field_forklift_tires
+    - field.field.node.forklift.field_forklift_video
     - field.field.node.forklift.field_forklift_year
     - field.field.node.forklift.field_images
     - image.style.thumbnail
@@ -26,6 +27,7 @@ dependencies:
     - forklift_general
     - path
     - text
+    - video_embed_field
 id: node.forklift.default
 targetEntityType: node
 bundle: forklift
@@ -154,6 +156,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_forklift_video:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
     region: content
   field_forklift_year:
     weight: 17

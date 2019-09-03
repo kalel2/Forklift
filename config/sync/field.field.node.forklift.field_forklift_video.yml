@@ -1,0 +1,25 @@
+uuid: c3cbd91a-1659-41f4-8b2a-35dcbd58f027
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forklift_video
+    - node.type.forklift
+  module:
+    - video_embed_field
+id: node.forklift.field_forklift_video
+field_name: field_forklift_video
+entity_type: node
+bundle: forklift
+label: Video
+description: 'insert a link to a video from Youtube or Vшmeo in this field'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: vimeo
+    youtube_playlist: '0'
+field_type: video_embed_field
