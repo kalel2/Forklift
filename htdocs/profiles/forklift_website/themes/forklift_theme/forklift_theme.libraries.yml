@@ -13,3 +13,19 @@ base:
     - core/jquery.once
     - core/ajax
     - core/drupal.ajax
+
+bootstrap:
+  header: true
+  version: "1.0"
+  css:
+    theme:
+      bootstrap/css/bootstrap.min.css: {}
+  js:
+    bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.once
+    - core/ajax
+    - core/drupal.ajax

@@ -5,6 +5,7 @@ description: 'A flexible theme based on classy theme for the website of Forklift
 core: 8.x
 libraries:
   - forklift_theme/base
+  - forklift_theme/bootstrap
 regions:
   header: Header
   primary_menu: 'Primary menu'

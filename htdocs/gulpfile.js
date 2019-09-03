@@ -23,22 +23,24 @@ var path = {
 	styles: {
 		css: 'profiles/forklift_website/themes/forklift_theme/css/',
 		scss: 'profiles/forklift_website/themes/forklift_theme/scss/**/*.*',
-		scss_input: 'profiles/forklift_website/themes/forklift_theme/scss/styles.scss'
+		scss_input: 'profiles/forklift_website/themes/forklift_theme/scss/styles.scss',
+    bootstrapStyleDst: 'profiles/forklift_website/themes/forklift_theme/bootstrap/css'
 	},
 	js: {
 		src: 'profiles/forklift_website/themes/forklift_theme/js_src/**/*.*',
-		dst: 'profiles/forklift_website/themes/forklift_theme/js/'
+		dst: 'profiles/forklift_website/themes/forklift_theme/js/',
+    bootstrapDst: 'profiles/forklift_website/themes/forklift_theme/bootstrap/js'
 	},
 	template: 'profiles/forklift_website/themes/forklift_theme/templates/*.twig'
 };
 
 
-gulp.task('webserver', ['sass', 'js'], function () {
-    browserSync.init({
-        proxy: config.site_name,
-        open: false
-    });
-});
+// gulp.task('webserver', ['sass', 'js'], function () {
+//     browserSync.init({
+//         proxy: config.site_name,
+//         open: false
+//     });
+// });
 
 gulp.task('sass', function () {
     gulp.src(path.styles.scss_input)
@@ -76,21 +78,31 @@ gulp.task('clearcache', function() {
     ]);
 });
 
-gulp.task('reload', ['clearcache'], function () {
-    reload();
+// Move the javascript files into our folder
+gulp.task('bootstrap-js', function() {
+  return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js'])
+      .pipe(gulp.dest(path.js.bootstrapDst));
 });
 
-gulp.task('watch', ['webserver'], function () {
-    watch([path.styles.scss], function (event, cb) {
-    gulp.start('sass');
-  });
-    watch([path.js.src], function (event, cb) {
-    gulp.start('js');
-  });
-    watch([path.template], function (event, cb) {
-    gulp.start('reload');
-  });
+gulp.task('bootstrap-css', function() {
+  return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.min.css'])
+      .pipe(gulp.dest(path.styles.bootstrapStyleDst));
 });
-
-
-gulp.task('default', ['watch', 'sass']);
+// gulp.task('reload', ['clearcache'], function () {
+//     reload();
+// });
+//
+// gulp.task('watch', ['webserver'], function () {
+//     watch([path.styles.scss], function (event, cb) {
+//     gulp.start('sass');
+//   });
+//     watch([path.js.src], function (event, cb) {
+//     gulp.start('js');
+//   });
+//     watch([path.template], function (event, cb) {
+//     gulp.start('reload');
+//   });
+// });
+//
+//
+// gulp.task('default', ['watch', 'sass']);

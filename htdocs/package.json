@@ -5,19 +5,20 @@
   "author": "Serhiy",
   "license": "ISC",
   "dependencies": {
-    "gulp": "latest",
-    "gulp-watch": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-sass": "latest",
-    "gulp-sourcemaps": "latest",
+    "bootstrap": "^4.3.1",
     "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
     "gulp-plumber": "latest",
+    "gulp-sass": "latest",
     "gulp-shell": "latest",
     "gulp-size": "latest",
+    "gulp-sourcemaps": "latest",
     "gulp-svg-sprite": "latest",
-    "gulp-util": "latest",
-    "gulp-concat": "latest",
     "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "latest",
     "yargs": "latest"
   }
 }
