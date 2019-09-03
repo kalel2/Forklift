@@ -1,0 +1,8 @@
+name: Forklift general
+package: Forklift
+description: 'Specific Forklift functionalities'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - image

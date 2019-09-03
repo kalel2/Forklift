@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter()
+ */
+function forklift_general_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+  $form_ids = ['node_forklift_edit_form'];
+  if (in_array($form_id, $form_ids)) {
+    $form['#validate'][] = '_forklift_general_form_validate';
+  }
+}
+
+/**
+ * Validates submission values in the FORM_ID() form.
+ */
+function _forklift_general_form_validate(array &$form, FormStateInterface $form_state)
+{
+  $field_names = array_keys(\Drupal::service('entity_field.manager')->getFieldMapByFieldType('forklift_image')['node']);
+  foreach ($form_state->getValues() as $field_name => $value) {
+    if (in_array($field_name, $field_names)) {
+      $valid = false;
+      foreach ($form_state->getValue($field_name) as $part) {
+        if (isset($part['front_image'])) {
+          if (!$valid && $part['front_image'] == 1) {
+            $valid = true;
+          } elseif ($valid && $part['front_image'] == 1) {
+            $form_state->setErrorByName($field_name, t('Only one image can be used as front image.'));
+          }
+        }
+      }
+    }
+  }
+}
