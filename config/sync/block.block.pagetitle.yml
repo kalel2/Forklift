@@ -1,0 +1,18 @@
+uuid: b877c590-0bb7-42dd-bdab-37e2557be902
+langcode: en
+status: true
+dependencies:
+  theme:
+    - forklift_theme
+id: pagetitle
+theme: forklift_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -106,5 +106,6 @@ hidden:
   field_forklift_motor_brand_type: true
   field_forklift_overall_height: true
   field_forklift_tires: true
+  field_forklift_video: true
   field_forklift_year: true
   search_api_excerpt: true

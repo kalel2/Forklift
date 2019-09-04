@@ -19,7 +19,7 @@ bundle: article
 mode: default
 content:
   addtoany:
-    weight: 5
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -31,7 +31,7 @@ content:
     third_party_settings: {  }
     label: hidden
   field_news_image:
-    weight: 101
+    weight: 1
     label: above
     settings:
       optionset: default
@@ -42,7 +42,7 @@ content:
     type: forklift_flexslider
     region: content
   links:
-    weight: 100
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }

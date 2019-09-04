@@ -1,0 +1,20 @@
+uuid: de652d74-70f8-412b-9630-dd6a2e859f4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forklift_theme
+id: messages
+theme: forklift_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

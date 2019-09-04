@@ -1,0 +1,20 @@
+uuid: 74b4d299-f53d-4efa-82c5-f5006ee3fce0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forklift_theme
+id: poweredbydrupal
+theme: forklift_theme
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

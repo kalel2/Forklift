@@ -1,0 +1,20 @@
+uuid: 19e71e68-bdf1-46a0-9946-5e5a71f3b440
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forklift_theme
+id: mainpagecontent
+theme: forklift_theme
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
