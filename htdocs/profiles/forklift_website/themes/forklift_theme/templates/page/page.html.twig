@@ -83,19 +83,23 @@
             </aside>
           </div>
         {% endif %}
-        <main id="content" class="column main-content col-md-8 col-12" role="main">
-          <section class="section">
-            <a id="main-content" tabindex="-1"></a>
-            {{ page.content }}
-          </section>
-        </main>
-        {% if page.sidebar_second %}
-          <div id="sidebar-second" class="column sidebar col-md-2 col-12">
-            <aside class="section" role="complementary">
-              {{ page.sidebar_second }}
-            </aside>
-          </div>
-        {% endif %}
+        {% block mainContent %}
+          <main id="content" class="column main-content col-md-8 col-12" role="main">
+            <section class="section">
+              <a id="main-content" tabindex="-1"></a>
+              {{ page.content }}
+            </section>
+          </main>
+        {% endblock %}
+        {% block sidebarSecond %}
+          {% if page.sidebar_second %}
+            <div id="sidebar-second" class="column sidebar col-md-2 col-12">
+              <aside class="section" role="complementary">
+                {{ page.sidebar_second }}
+              </aside>
+            </div>
+          {% endif %}
+        {% endblock %}
       </div>
     </div>
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
