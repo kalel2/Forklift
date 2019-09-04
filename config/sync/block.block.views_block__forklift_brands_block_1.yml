@@ -1,21 +1,21 @@
-uuid: 722d1da6-ba9a-4637-b8d6-4d853dce0b9a
+uuid: 422391c6-76eb-43e8-9b4a-ef1979012ae6
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news
+    - views.view.forklift_brands
   module:
     - views
   theme:
     - forklift_theme
-id: views_block__news_block_news_frontpage
+id: views_block__forklift_brands_block_1
 theme: forklift_theme
 region: sidebar_second
-weight: -4
+weight: -3
 provider: null
-plugin: 'views_block:news-block_news_frontpage'
+plugin: 'views_block:forklift_brands-block_1'
 settings:
-  id: 'views_block:news-block_news_frontpage'
+  id: 'views_block:forklift_brands-block_1'
   label: ''
   provider: views
   label_display: '0'
