@@ -26,10 +26,10 @@ content:
     settings:
       trim_length: 150
       trim_type: chars
-      trim_suffix: ''
+      trim_suffix: ...
       wrap_class: trimmed
       more_link: true
-      more_text: More
+      more_text: 'read more'
       more_class: more-link
       summary_handler: full
       wrap_output: false
