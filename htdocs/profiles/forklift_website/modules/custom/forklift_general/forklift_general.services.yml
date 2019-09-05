@@ -1,0 +1,3 @@
+services:
+  forklift_general.helper:
+    class: Drupal\forklift_general\ForkliftHelperService

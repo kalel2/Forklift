@@ -27,7 +27,7 @@ function _forklift_general_form_validate(array &$form, FormStateInterface $form_
           if (!$valid && $part['front_image'] == 1) {
             $valid = true;
           } elseif ($valid && $part['front_image'] == 1) {
-            $form_state->setErrorByName($field_name, t('Only one image can be used as front image.'));
+            $form_state->setErrorByName( 'front_image', t('Only one image can be used as front image.'));
           }
         }
       }

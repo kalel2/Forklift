@@ -8,6 +8,8 @@
 use Drupal\Core\Cache\CacheableMetadata;
 use Drupal\node\NodeInterface;
 use Drupal\node\Entity\Node;
+use Drupal\file\Plugin\Field\FieldType\FileFieldItemList;
+use Drupal\forklift_general\ForkliftHelperService;
 
 /**
  * Prepares variables for the html.html.twig template.
@@ -108,5 +110,35 @@ function forklift_theme_theme_suggestions_page_title_alter(array &$suggestions, 
     if ($node instanceof NodeInterface) {
       $suggestions[] = $variables['theme_hook_original'] . '__' . $node->getType();
     }
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_node().
+ * Show selected image as front for node type which are described in $node_types array
+ */
+function forklift_theme_preprocess_node(array &$variables) {
+  $node_types = ['forklift', 'article'];
+  /**
+   * @var Node $node
+   */
+  $node = $variables['elements']['#node'];
+  $node_type = $node->getType();
+  if (in_array($node->getType(), $node_types) && $variables['view_mode'] === 'teaser') {
+    $field_name = \Drupal::service('forklift_general.helper')->getFieldNameByFieldTypeFonNodeType('forklift_image', $node_type);
+    /**
+     * @var FileFieldItemList $items
+     */
+    $items = $variables['elements'][$field_name]['#items'];
+    $items_val = $items->getValue();
+    $front_image_key = null;
+    foreach ($items_val as $key => $value) {
+      if ($value['front_image'] == 1) {
+        $front_image = $key;
+      }
+    }
+
+    $variables['content'][$field_name] = $variables['content'][$field_name][is_null($front_image) ? 0 : $front_image];
   }
 }
