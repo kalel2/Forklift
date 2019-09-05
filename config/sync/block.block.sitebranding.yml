@@ -1,0 +1,23 @@
+uuid: a2ffe11b-e0c8-4164-a1e2-51a2a99696ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forklift_theme
+id: sitebranding
+theme: forklift_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
